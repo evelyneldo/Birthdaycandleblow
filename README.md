@@ -68,12 +68,12 @@ Birthdaycandleblow/
 │── vite.config.js
 │── README.md
 
-Installation & Usage
-1Clone the repository
+#Installation & Usage
+Clone the repository
 git clone https://github.com/evelyneldo/Birthdaycandleblow.git
 
-Install dependencies
+#Install dependencies
 npm install
 
-Run locally
+#Run locally
 npm run dev
