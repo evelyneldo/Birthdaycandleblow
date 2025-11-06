@@ -1,0 +1,105 @@
+.app-container {
+  text-align: center;
+  padding: 40px;
+  font-family: Arial;
+}
+
+.start-screen {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.name-input {
+  padding: 10px;
+  border-radius: 8px;
+  width: 250px;
+  border: 1px solid #aaa;
+  font-size: 16px;
+}
+
+.start-btn {
+  padding: 12px 25px;
+  background: #ff4081;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.candle-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.candle {
+  width: 40px;
+  height: 90px;
+  background: #ffb74d;
+  border-radius: 10px;
+  position: relative;
+}
+
+.flame {
+  width: 20px;
+  height: 30px;
+  background: orange;
+  border-radius: 50% 50% 50% 50%;
+  position: absolute;
+  top: -30px;
+  left: 10px;
+  animation: flicker 0.3s infinite;
+}
+
+@keyframes flicker {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.countdown h1 {
+  font-size: 90px;
+  margin-top: 20px;
+  animation: pop 0.4s;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.wish-screen h1 {
+  font-size: 40px;
+  margin-top: 60px;
+}
+
+.confetti {
+  width: 10px;
+  height: 10px;
+  background: hsl(var(--hue), 100%, 50%);
+  position: fixed;
+  top: -10px;
+  animation: fall linear forwards;
+}
+
+.confetti {
+  --hue: calc(360 * var(--rand));
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh) rotate(360deg);
+  }
+}
